@@ -54,7 +54,7 @@ public class ActiveNotifier implements FineGrainedNotifier {
     }
 
     private void notifyStart(AbstractBuild build, String message) {
-        getHipChat(build).publish(message, "green");
+        getHipChat(build).publish(message, "yellow");
     }
 
     public void finalized(AbstractBuild r) {
